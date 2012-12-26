@@ -1,4 +1,4 @@
-#Suppress persistent highlighting of searched terms
+"Suppress persistent highlighting of searched terms
 set nohlsearch
 set autowriteall
 set number
