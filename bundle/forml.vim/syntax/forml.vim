@@ -21,13 +21,9 @@ syn match formlDelimiter      "(\|)\|\[\|\]\|{\|}"
 syn match formlNumber         "\<-\?[0-9]\+\>"
 "syn match formlBinding        "\(\<[a-z][a-zA-Z0-9_']*\)\=\<[a-z][a-zA-Z0-9_']*\>"
 syn match formlType           "\(\<[A-Z][a-zA-Z0-9_']*\)\=\<[A-Z][a-zA-Z0-9_']*\>"
+syn match javascriptOpenClose '`'
 
 syn keyword formlNestedKeywords let open as module nextgroup=formlBinding skipwhite
-
-runtime! syntax/forml.vim
-"unlet b:current_syntax
-syntax include @Javascript syntax/javascript.vim
-syntax region javascriptRegion start=+`+ keepend end=+`+  contains=@Javascript
 
 syn region formlString start=+"+ skip=+\\\\\|\\"+ end=+"+
 
@@ -53,7 +49,7 @@ hi def link formlStatement      Label
 hi def link formlDelimiter      Delimiter
 hi def link formlType           Typedef
 hi def link formlExist          Todo
-hi def link javascriptRegion    SpecialChar
 
+hi def link javascriptOpenClose SpecialChar
 setlocal expandtab
 setlocal autoindent
