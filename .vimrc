@@ -7,6 +7,8 @@ filetype plugin indent on
 syntax on
 :au FocusLost * :wa
 
+execute pathogen#infect()
+
 set backspace=indent,eol,start
 set ruler
 
