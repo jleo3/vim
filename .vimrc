@@ -47,6 +47,9 @@ map <leader>z z
 " grep recursively, ignoring case
 map <leader>g :! ack -i 
 
+" run the last vim command
+map <leader>k @:
+
 " FuzzyFinder and switchback commands
 map <leader>e :e#<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
@@ -67,10 +70,6 @@ map <leader>< h
 map <leader>l l
 map <leader>> l
 map <leader>= =
-
-" Move between horizontally split screens.
-map <leader>j j
-map <leader>k k
 
 " set shortcut for TlistToggle
 map <leader>tt :TlistToggle<CR>
