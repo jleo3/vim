@@ -1,8 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/jleo/dev/frontend'
-let g:netrw_dirhist_2='/Users/jleo/dev/frontend/app'
-let g:netrw_dirhist_3='/Users/jleo/dev/frontend/app/models'
-let g:netrw_dirhist_4='/Users/jleo/dev/frontend/app/models/bond_price'
-let g:netrw_dirhist_5='/Users/jleo/dev/frontend/app/models'
-let g:netrw_dirhist_6='/Users/jleo/dev/frontend/app'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/joe/dev/bane/lib'
+let g:netrw_dirhist_2='/home/joe/dev/bane/lib/bane'
+let g:netrw_dirhist_3='/home/joe/dev/bane/lib'
+let g:netrw_dirhist_4='/home/joe/dev/bane'
+let g:netrw_dirhist_5='/home/joe/dev/bane/bin'
