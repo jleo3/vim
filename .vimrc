@@ -1,5 +1,9 @@
 "Suppress persistent highlighting of searched terms
 set nohlsearch
+
+" pathogen
+execute pathogen#infect()
+
 set autowriteall
 set number
 set nocompatible
