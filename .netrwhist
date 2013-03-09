@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/joe/dev/octopress/.themes/oct2/source/_includes'
 let g:netrw_dirhist_2='/home/joe/dev/octopress/.themes/oct2/source/_includes/asides'
 let g:netrw_dirhist_3='/home/joe/dev/octopress/source'
 let g:netrw_dirhist_4='/home/joe/dev/octopress'
 let g:netrw_dirhist_5='/home/joe/dev/sets_across/config'
+let g:netrw_dirhist_6='/home/joe/dev/sets_across/app/controllers'
+let g:netrw_dirhist_7='/home/joe/dev/sets_across/app'
+let g:netrw_dirhist_8='/home/joe/dev/sets_across/app/views'
+let g:netrw_dirhist_9='/home/joe/dev/sets_across/app/views/home'
