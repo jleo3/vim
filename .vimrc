@@ -48,7 +48,7 @@ map <leader>z z
 map <leader>g :! ack -i 
 
 " run the last vim command
-map <leader>k @:
+map <leader>d @:
 
 " FuzzyFinder and switchback commands
 map <leader>e :e#<CR>
@@ -66,9 +66,7 @@ map <leader>tu :! rake test:units<CR>
 " Split screen vertically and move between screens.
 map <leader>v :vsp<CR> 
 map <leader>h h
-map <leader>< h
 map <leader>l l
-map <leader>> l
 map <leader>= =
 
 " set shortcut for TlistToggle
