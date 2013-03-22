@@ -61,6 +61,9 @@ map <leader>g :! ack -i
 " run the last vim command
 map <leader>d @:
 
+" HardMode
+nnoremap <leader>u <Esc>:call ToggleHardMode()<CR>
+
 " FuzzyFinder and switchback commands
 map <leader>e :e#<CR>
 map <leader>b :FuzzyFinderBuffer<CR>
