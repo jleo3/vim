@@ -107,6 +107,10 @@ if &term=="xterm"
      set t_Sf=^[[3%dm
 endif
 
+" Control+J/K maps -> go to next/previous in buffer
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+
 " Run Ruby unit tests with gT (for all) or gt (only test under
 " cursor) in command mode
 augroup RubyTests
