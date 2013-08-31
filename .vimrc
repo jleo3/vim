@@ -81,8 +81,6 @@ map <leader>c :FuzzyFinderRemoveCache<CR>
 
 map <leader>s :%s/
 
-map <leader>t :! rake test<CR>
-map <leader>ta :! rake testall<CR>
 map <leader>tf :! rake test:functionals<CR>
 map <leader>tu :! rake test:units<CR>
 
@@ -132,7 +130,8 @@ augroup END
 
 " vim-rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>T :call RunLastSpec()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
-nnoremap <Leader>l :call RunLastSpec()<CR>
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
