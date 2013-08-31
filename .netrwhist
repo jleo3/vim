@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/joe/dev/vlad'
-let g:netrw_dirhist_2='/home/joe/dev/vlad/lib/vlad'
-let g:netrw_dirhist_3='/home/joe/.vim'
-let g:netrw_dirhist_4='/home/joe/.vim/bundle/vim-prose'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/joe/dev/ga/overview.ga/01_info_session'
+let g:netrw_dirhist_2='/home/joe/dev/bane/lib/bane/servers'
+let g:netrw_dirhist_3='/home/joe/dev/ga/bewd_nyc_4/02_Variables_Conditionals'

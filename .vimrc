@@ -14,9 +14,18 @@ set autowriteall
 set number
 set nocompatible
 filetype plugin indent on
-filetype on
+filetype plugin on
+filetype off
 syntax on
 :au FocusLost * :wa
+
+" vundle
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'thoughtbot/vim-rspec'
 
 set backspace=indent,eol,start
 set ruler
@@ -120,5 +129,10 @@ augroup RubyTests
     \ % <C-R>=line("'<")<CR>p <CR>|
     \ :nmap gT :<C-U>!ruby %<CR>
 augroup END
+
+" vim-rspec mappings
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>s :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
 
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
