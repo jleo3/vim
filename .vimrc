@@ -26,6 +26,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'kien/ctrlp.vim'
 
 set backspace=indent,eol,start
 set ruler
@@ -33,6 +36,17 @@ set ruler
 let mapleader = ","
 
 set tabstop=2 shiftwidth=2 expandtab
+
+" CtrlP and switchback commands and config
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+map <leader>e :e#<CR>
+map <leader>f :CtrlP<CR>
+" <F5> to refresh
+" <c-y> to create a new file
+" <c-v> to open in new vertical split
+" <c-d> to switch to filename only
+" <c-z> to mark/unmark multiple files and <c-o> to open
 
 "incrementally search file"
 set incsearch
@@ -64,6 +78,8 @@ map <leader>rs :so %
 " stop the process
 map <leader>z z
 
+" paste from system clipboard
+map <leader>p "*p<CR>
 " grep recursively, ignoring case
 map <leader>g :! ack -i 
 
@@ -73,11 +89,6 @@ map <leader>d @:
 " HardMode
 nnoremap <leader>u <Esc>:call ToggleHardMode()<CR>
 
-" FuzzyFinder and switchback commands
-map <leader>e :e#<CR>
-map <leader>b :FuzzyFinderBuffer<CR>
-map <leader>f :FuzzyFinderFile<CR>
-map <leader>c :FuzzyFinderRemoveCache<CR>
 
 map <leader>s :%s/
 
@@ -101,9 +112,6 @@ map <leader>back t
 " tags shortcuts
 map fd 
 map ps 
-map <leader>sf :SweetVimRspecRunFocused
-map <leader>sa :SweetVimRspecRunFile
-map <leader>sp :SweetVimRspecRunPrevious
 map uts :vsp<CR>l:Runittest<CR>
 map fts :vsp<CR>l:Rfuntionaltest<CR>
 
