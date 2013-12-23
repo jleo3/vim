@@ -39,6 +39,7 @@ set tabstop=2 shiftwidth=2 expandtab
 
 " CtrlP and switchback commands and config
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_show_hidden = 1
 
 map <leader>e :e#<CR>
 map <leader>f :CtrlP<CR>
@@ -70,6 +71,9 @@ set autowrite
 "move swp files into .vim-tmp/"
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+" set the arglist to files with merge conflicts
+map <leader>q :args `git diff --name-only --diff-filter=U`<CR>
 
 " edit and update vimrc from ANYWHERE
 map <leader>rc :e ~/.vim/.vimrc<CR><C-W>
