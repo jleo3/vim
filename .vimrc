@@ -6,7 +6,7 @@ execute pathogen#infect()
 
 " trying these out for scala
 set showmatch
-colorscheme delek
+colorscheme github
 set autoindent
 set si
 
@@ -29,6 +29,7 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 set backspace=indent,eol,start
 set ruler
