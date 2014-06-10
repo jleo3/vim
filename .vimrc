@@ -6,7 +6,7 @@ execute pathogen#infect()
 
 " trying these out for scala
 set showmatch
-colorscheme github
+colorscheme delek
 set autoindent
 set si
 
