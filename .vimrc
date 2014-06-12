@@ -94,9 +94,6 @@ map <leader>d @:
 " HardMode
 nnoremap <leader>u <Esc>:call ToggleHardMode()<CR>
 
-
-map <leader>s :%s/
-
 map <leader>tf :! rake test:functionals<CR>
 map <leader>tu :! rake test:units<CR>
 
