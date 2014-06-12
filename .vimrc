@@ -31,6 +31,10 @@ Bundle 'mattn/gist-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kchmck/vim-coffee-script'
 
+" Allow project-specific .vimrc files
+set exrc
+set secure
+
 set backspace=indent,eol,start
 set ruler
 
@@ -142,6 +146,9 @@ augroup END
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>T :call RunLastSpec()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
-nnoremap <Leader>a :call RunAllSpecs()<CR>
+
+" vim-rails mappings
+nnoremap <Leader>a :A<CR>
+nnoremap <Leader>A :AV<CR>
 
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
