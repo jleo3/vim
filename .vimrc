@@ -17,7 +17,8 @@ filetype plugin indent on
 filetype plugin on
 filetype off
 syntax on
-:au FocusLost * :wa
+au FocusLost * :wa
+au BufRead,BufNewFile *.rabl setf ruby
 
 " vundle
 set rtp+=~/.vim/bundle/vundle
