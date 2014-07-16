@@ -9,7 +9,6 @@ set showmatch
 colorscheme delek
 set autoindent
 set si
-
 set autowriteall
 set number
 set nocompatible
@@ -49,6 +48,7 @@ let g:ctrlp_show_hidden = 1
 
 map <leader>e :e#<CR>
 map <leader>f :CtrlP<CR>
+map <leader>b :CtrlPBuffer<CR>
 " <F5> to refresh
 " <c-y> to create a new file
 " <c-v> to open in new vertical split
@@ -85,13 +85,16 @@ map <leader>q :args `git diff --name-only --diff-filter=U`<CR>
 map <leader>rc :e ~/.vim/.vimrc<CR><C-W>
 map <leader>rs :so %
 
+" vim-bad-whitespace
+map <leader>w :EraseBadWhitespace<CR>
+
 " stop the process
 map <leader>z z
 
 " paste from system clipboard
 map <leader>p "*p<CR>
 " grep recursively, ignoring case
-map <leader>g :! ack -i 
+map <leader>g :! ack -i
 
 " run the last vim command
 map <leader>d @:
@@ -103,7 +106,7 @@ map <leader>tf :! rake test:functionals<CR>
 map <leader>tu :! rake test:units<CR>
 
 " Split screen vertically and move between screens.
-map <leader>v :vsp<CR> 
+map <leader>v :vsp<CR>
 map <leader>h h
 map <leader>l l
 map <leader>= =
@@ -138,7 +141,7 @@ map <C-K> :bprev<CR>
 augroup RubyTests
   au!
   autocmd BufRead,BufNewFile *_test.rb,test_*.rb
-    \ :nmap gt V:<C-U>!$HOME/.vim/bin/ruby-run-focused-unit-test 
+    \ :nmap gt V:<C-U>!$HOME/.vim/bin/ruby-run-focused-unit-test
     \ % <C-R>=line("'<")<CR>p <CR>|
     \ :nmap gT :<C-U>!ruby %<CR>
 augroup END
