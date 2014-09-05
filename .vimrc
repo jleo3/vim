@@ -23,13 +23,14 @@ au BufRead,BufNewFile *.rabl setf ruby
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'reedes/vim-pencil'
 
 " Allow project-specific .vimrc files
 set exrc
