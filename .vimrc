@@ -4,7 +4,10 @@ set nohlsearch
 " pathogen
 execute pathogen#infect()
 
-" trying these out for scala
+" Use Vim's undofiles
+set undofile
+set undodir=$HOME/.vim/undo
+
 set showmatch
 colorscheme delek
 set autoindent
