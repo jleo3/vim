@@ -171,6 +171,16 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+" vim-pencil config
+let g:pencil#wrapModeDefault = 'soft'
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType textile call pencil#init()
+  autocmd FileType text call pencil#init({'wrap': 'hard'})
+augroup END
+
 " bind \ (backward slash) to grep shortcut
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
