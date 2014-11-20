@@ -97,11 +97,12 @@ map <leader>z z
 
 " paste from system clipboard
 map <leader>p "*p<CR>
-" grep recursively, ignoring case
-map <leader>g :! ack -i
 
 " run the last vim command
 map <leader>d @:
+
+" paste copied text over current word
+map <leader>r viw"0p
 
 " HardMode
 nnoremap <leader>u <Esc>:call ToggleHardMode()<CR>
