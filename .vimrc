@@ -35,6 +35,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'reedes/vim-pencil'
+Plugin 'elixir-lang/vim-elixir'
 
 " Allow project-specific .vimrc files
 set exrc
