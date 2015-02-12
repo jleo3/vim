@@ -33,9 +33,9 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'reedes/vim-pencil'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'fatih/vim-go'
 
 " Allow project-specific .vimrc files
 set exrc
