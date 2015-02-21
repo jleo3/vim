@@ -11,3 +11,4 @@ jleo3 vim
 - `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 - Open vi, run `:PluginInstall`
 
+- cd ~/.vim/bundle/YouCompleteMe && ./install.sh
