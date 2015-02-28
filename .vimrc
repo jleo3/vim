@@ -214,3 +214,7 @@ command! Sid :call InsertStoryId()
 
 nnoremap <leader>i :Sid<CR>
 
+" For Golang using https://github.com/fatih/vim-go
+let g:go_fmt_command = "goimports"
+au FileType go nmap <leader>g :! go test .<CR>
+
