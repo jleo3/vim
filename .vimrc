@@ -94,6 +94,9 @@ map <leader>rs :so %
 " vim-bad-whitespace
 map <leader>w :EraseBadWhitespace<CR>
 
+" copy to system paste buffer
+map <leader>y "+y
+
 " stop the process
 map <leader>z z
 

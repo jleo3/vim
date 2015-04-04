@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/joe/dev/ga/overview.ga/01_info_session'
 let g:netrw_dirhist_2='/home/joe/dev/bane/lib/bane/servers'
 let g:netrw_dirhist_3='/home/joe/dev/ga/bewd_nyc_4/02_Variables_Conditionals'
+let g:netrw_dirhist_4='/home/jleo3/dev/roughcut'
+let g:netrw_dirhist_5='/home/jleo3/dev/daisyBill/app/policies'
