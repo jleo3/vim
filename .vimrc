@@ -8,6 +8,7 @@ execute pathogen#infect()
 set undofile
 set undodir=$HOME/.vim/undo
 
+set belloff=all
 set showmatch
 colorscheme delek
 set autoindent
