@@ -34,7 +34,6 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'reedes/vim-pencil'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'github/copilot.vim'
 
