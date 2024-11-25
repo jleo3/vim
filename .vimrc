@@ -36,6 +36,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'reedes/vim-pencil'
 Plugin 'slim-template/vim-slim.git'
+Plugin 'github/copilot.vim'
 
 " Allow project-specific .vimrc files
 set exrc
